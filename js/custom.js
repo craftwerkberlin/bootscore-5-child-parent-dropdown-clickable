@@ -54,7 +54,7 @@ jQuery(document).ready(function ($) {
     */
 
     // Close dropdown and offcanvas on click .dropdown .nav-link, keep .dropdown-menu open
-    $('.navbar-nav>li>a:not(.dropdown-toggle), a.dropdown-item').on('click', function () {
+    $('.navbar-nav>li>, a.dropdown-item').on('click', function () {
         $('.offcanvas').removeClass('show')
         $('body').removeClass('offcanvas-backdrop offcanvas-freeze offcanvas-open')
     });
